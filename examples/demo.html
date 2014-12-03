@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Fullscreen Background Image Slideshow with JS + CSS3</title>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photos" />
+    <meta name="keywords" content="photos" />
+    <meta name="author" content="Stephan Schmitz" />
+    <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+</head>
+<body>
+    <div>
+        <figure id="slideshow" class="sss">
+            <img src="./images/1.jpg" alt>
+            <img src="./images/2.jpg" alt>
+            <img src="./images/3.jpg" alt>
+            <img src="./images/4.jpg" alt>
+            <img src="./images/5.jpg" alt>
+            <img src="./images/6.jpg" alt>
+        </figure>
+        <div class="progress-bar"></div>
+    </div>
+
+    <script type="text/javascript" src="../dist/SuperSimpleSlideshow.js"></script>
+    <script type="text/javascript">
+        (function(){
+            var opts = {
+                    sliderId: "slideshow",
+                    autostart: true,
+                    interval:  4000
+                };
+
+            new SuperSimpleSlideshow(opts);
+        })();
+    </script>
+</body>
+</html>
